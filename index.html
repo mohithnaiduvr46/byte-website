@@ -20,7 +20,7 @@ body{
     overflow-x:hidden;
 }
 
-/* PREMIUM GLASS HEADER */
+/* HEADER */
 header{
     position:fixed;
     top:0;
@@ -42,7 +42,7 @@ header{
     letter-spacing:3px;
 }
 
-/* Prevent content hiding under fixed header */
+/* HERO */
 .hero{
     margin-top:70px;
     height:calc(100vh - 70px);
@@ -90,6 +90,7 @@ header{
     background:#00f0ff;
 }
 
+/* SECTIONS */
 .section{
     padding:140px 8%;
     text-align:center;
@@ -101,6 +102,7 @@ header{
     font-weight:800;
 }
 
+/* PRODUCTS */
 .products{
     display:grid;
     grid-template-columns:repeat(5, 1fr);
@@ -112,20 +114,14 @@ header{
     padding:40px 30px;
     border-radius:24px;
     border:1px solid #222;
-    transition:0.4s;
+    transition:all 0.4s ease;
     text-align:left;
 }
 
 .card:hover{
-    transform:translateY(-15px);
+    transform:translateY(-12px) scale(1.03);
     border:1px solid #00f0ff;
     box-shadow:0 0 40px rgba(0,240,255,0.25);
-}
-
-.featured{
-    border:1px solid #00f0ff;
-    box-shadow:0 0 50px rgba(0,240,255,0.35);
-    transform:scale(1.05);
 }
 
 .card h3{
@@ -136,10 +132,10 @@ header{
 .card p{
     color:#aaa;
     font-size:14px;
-    text-align:left;
     line-height:1.7;
 }
 
+/* WHY SECTION */
 .why-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -151,12 +147,12 @@ header{
     padding:40px 30px;
     border-radius:24px;
     border:1px solid #222;
-    transition:0.4s;
+    transition:all 0.4s ease;
     text-align:left;
 }
 
 .why-card:hover{
-    transform:translateY(-15px);
+    transform:translateY(-12px);
     border:1px solid #00f0ff;
     box-shadow:0 0 40px rgba(0,240,255,0.25);
 }
@@ -169,10 +165,10 @@ header{
 .why-card p{
     color:#aaa;
     font-size:14px;
-    text-align:left;
     line-height:1.7;
 }
 
+/* EMAIL */
 .email-box{
     margin-top:60px;
 }
@@ -194,6 +190,7 @@ header{
     cursor:pointer;
 }
 
+/* FOOTER */
 footer{
     padding:80px 10%;
     text-align:center;
@@ -247,7 +244,7 @@ footer{
             <p>Compact high-capacity power solutions designed to keep you moving without interruption.</p>
         </div>
 
-        <div class="card featured">
+        <div class="card">
             <h3>Smart Bundles</h3>
             <p>A complete productivity ecosystem — adapter, braided cable, TWS earbuds, power bank, organizer, lens protector, and tempered glass — thoughtfully curated into one seamless kit.</p>
         </div>
